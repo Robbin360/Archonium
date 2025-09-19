@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#03040a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g font-family="'Space Grotesk',system-ui,sans-serif" fill="#FFFFFF" text-anchor="middle">
+    <text x="600" y="290" font-size="112" letter-spacing="8">ARCHONIUM</text>
+    <text x="600" y="360" font-size="28" fill="#0047FF">Intelligence & Validation for Elite Systems</text>
+  </g>
+</svg>

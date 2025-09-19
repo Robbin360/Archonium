@@ -1,0 +1,39 @@
+{
+  "name": "archonium",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "test:unit": "vitest",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "lhci": "lhci autorun"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.15",
+    "lottie-web": "^5.13.0",
+    "next": "15.5.3",
+    "nodemailer": "^7.0.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.55.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "lhci": "^4.1.1",
+    "playwright": "^1.55.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}
