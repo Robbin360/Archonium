@@ -81,7 +81,11 @@ export class SovereigntyEngine {
   }
 }
 
-export const trackSovereignEvent = (action: string, details?: Record<string, any>) => {
+export interface SovereignEventDetails {
+  [key: string]: string | number | boolean | null | undefined | SovereignEventDetails;
+}
+
+export const trackSovereignEvent = (action: string, details?: SovereignEventDetails) => {
   if (typeof window !== 'undefined') {
     console.log(`[ARCHONIUM SOVEREIGNTY] ${action}`, details);
     
