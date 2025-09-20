@@ -81,12 +81,13 @@ export const SolutionsSection = () => {
   return (
     <section 
       ref={ref}
-      className="py-20 md:py-32 bg-void-900 relative overflow-hidden"
+      className="min-h-[100vh] flex items-center bg-void-900 relative overflow-hidden"
       id="solutions"
+      style={{ minHeight: '100dvh' }}
     >
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       
-      <div className="container mx-auto px-4 relative">
+      <div className="w-full max-w-7xl mx-auto px-4 py-20 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

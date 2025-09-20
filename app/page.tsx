@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-void-950 text-white">
+    <main className="min-h-screen bg-void-950 text-white w-full overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <FeaturesSection />

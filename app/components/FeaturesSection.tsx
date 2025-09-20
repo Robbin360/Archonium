@@ -72,15 +72,16 @@ export const FeaturesSection = () => {
   return (
     <section 
       ref={ref}
-      className="py-20 md:py-32 bg-void-950 relative overflow-hidden"
+      className="w-full min-h-[100vh] flex items-center bg-void-950 relative overflow-hidden"
       id="features"
+      style={{ minHeight: '100dvh' }}
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/4 w-full h-full bg-gradient-radial from-authority-blue/5 to-transparent opacity-30" />
         <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-gradient-radial from-dominance-cyan/5 to-transparent opacity-30" />
       </div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="w-full max-w-7xl mx-auto px-4 py-20 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -91,7 +92,7 @@ export const FeaturesSection = () => {
             CARACTERÍSTICAS
           </span>
           <h2 className="text-3xl md:text-5xl font-power text-control-white mb-6">
-            Tecnología de <span className="text-transparent bg-clip-text bg-gradient-to-r from-authority-blue to-dominance-cyan">Vanguardia</span>
+            Tecnología de <span className="text-white font-bold">Vanguardia</span>
           </h2>
           <p className="text-control-white/70 text-lg">
             Soluciones de validación diseñadas para operaciones donde el fracaso no es una opción.

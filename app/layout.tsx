@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Orbitron, JetBrains_Mono } from 'next/font/google';
 import "./globals.css";
 import "../src/styles/globals.css";
+import "../src/styles/custom.css";
 import { SovereigntyInitializer } from "@/lib/sovereignty";
 
 // Initialize fonts with preload and optimization

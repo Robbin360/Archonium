@@ -1,0 +1,48 @@
+/* Estilos para manejar el scroll */
+html {
+  height: 100%;
+  overflow-y: scroll; /* Siempre muestra la barra de desplazamiento vertical */
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-color: #3B82F6 #0a0a0a; /* Color de la barra de desplazamiento */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a; /* Color de fondo de la pista de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3B82F6; /* Color del pulgar de desplazamiento */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Color del pulgar al pasar el mouse */
+}
+
+/* Asegurar que el body ocupe toda la altura */
+body, #__next {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegurar que el contenido principal ocupe el espacio disponible */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegurar que las secciones ocupen al menos el 100% del viewport */
+section {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}

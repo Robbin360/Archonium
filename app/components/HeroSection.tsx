@@ -42,8 +42,9 @@ export const HeroSection = () => {
   return (
     <section 
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-[100vh] w-full flex items-center justify-start overflow-hidden pt-20"
       id="home"
+      style={{ minHeight: '100dvh' }}
     >
       {/* Background Grid */}
       <motion.div
@@ -57,14 +58,14 @@ export const HeroSection = () => {
 
       {/* Content */}
       <motion.div
-        className="container mx-auto px-4 py-20 relative z-10"
+        className="w-full max-w-7xl mx-auto px-4 py-10 relative z-10 h-full flex items-center"
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-power mb-6 text-transparent bg-clip-text bg-gradient-to-r from-authority-blue to-dominance-cyan"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white"
             variants={itemVariants}
           >
             ARCHONIUM
