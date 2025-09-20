@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
+import { SovereignPerformance } from './performance';
 
 export interface SovereignMetric {
   value: number;
